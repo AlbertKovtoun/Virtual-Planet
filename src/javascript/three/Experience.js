@@ -12,6 +12,7 @@ import { Environment } from "./Environment"
 import { Bubble } from "./Bubbles"
 import { Background } from "./Background"
 import { Grain } from "./Grain"
+import { Cursor } from "./Cursor"
 
 export function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
@@ -55,6 +56,8 @@ export const bubble = new Bubble()
 export const backgroud = new Background()
 
 export const grain = new Grain()
+
+export const cursor = new Cursor()
 
 export const camera = new Camera()
 

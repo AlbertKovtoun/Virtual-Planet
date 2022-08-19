@@ -14,7 +14,7 @@ export class Grain {
 
         uniforms: {
           uTime: { value: 0 },
-          uGrainStrength: { value: 40 },
+          uGrainStrength: { value: 20 },
         },
 
         vertexShader: `
