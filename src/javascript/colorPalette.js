@@ -1,0 +1,18 @@
+export const colorPalette = [
+  // ["#384148", "#01589f", "#008196", "#aa9c34", "#955092", "#314a6e", "#46843d"],
+  ["#B84FCE", "#BD5FD6", "#C16EDD", "#C67EE5", "#CB8DEC", "#CF9DF4", "#D4ACFB"],
+  ["#2F8F9D", "#1B9AAA", "#3BACB6", "#5ABEC2", "#99E1D9", "#B3E8DC", "#CCEEDE"],
+  ["#03045E", "#023E8A", "#0077B6", "#0096C7", "#00B4D8", "#48CAE4", "#CAF0F8"],
+  ["#271F7F", "#6930C3", "#5E60CE", "#5390D9", "#4EA8DE", "#56CFE1", "#80FFDB"],
+  ["#10451D", "#155D27", "#1A7431", "#208B3A", "#2DC653", "#6EDE8A", "#B7EFC5"],
+  ["#590D22", "#800F2F", "#A4133C", "#C9184A", "#FF4D6D", "#FF758F", "#FFF0F3"],
+  ["#757BC8", "#8187DC", "#8E94F2", "#9FA0FF", "#DAB6FC", "#DDBDFC", "#E0C3FC"],
+  ["#0A1647", "#2E3961", "#535C7B", "#777F96", "#9BA1B0", "#C0C4CA", "#E4E7E4"],
+  ["#F94144", "#FA5644", "#FB6A43", "#FC7F43", "#FD9343", "#FEA842", "#FFBC42"],
+  // ["#93E1D8", "#9FE6DD", "#ACEBE2", "#B8F0E8", "#C4F5ED", "#D1FAF2", "#DDFFF7"],
+  ["#61CEF2", "#79D3F4", "#91D7F5", "#A9DCF7", "#C0E1F9", "#D8E5FA", "#F0EAFC"],
+  ["#47A0FF", "#6CB4FF", "#7FBEFF", "#91C7FF", "#A4D1FF", "#B6DAFF", "#DBEDFF"],
+  // ["#1ED7B5", "#41DDB3", "#64E2B0", "#87E8AE", "#AAEEAC", "#CDF3A9", "#F0F9A7"],
+  ["#FF0000", "#FF2A2A", "#FF5555", "#FF8080", "#FFAAAA", "#FFD5D5", "#FFFFFF"],
+  ["#0077FF", "#1F89FF", "#3D9AFF", "#5CACFF", "#7BBDFF", "#99CFFF", "#B8E0FF"],
+]
