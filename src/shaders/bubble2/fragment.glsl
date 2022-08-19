@@ -74,6 +74,12 @@ vec2 rotate(vec2 v, float a) {
 
 float rand(float n){return fract(sin(n) * 43758.5453123);}
 
+float noise(float p){
+	float fl = floor(p);
+  float fc = fract(p);
+	return mix(rand(fl), rand(fl + 1.0), fc);
+}
+
 varying vec2 vUv;
 varying vec3 vPosition;
 varying vec3 vNormal;
@@ -109,9 +115,12 @@ void main()
 
     float noise4 = smoothstep(0.78, 0.83, fbm);
     vec3 color5 = mix(color4, uColor5, noise4); 
+    
+    vec3 lightningColor = uColor6;
+    lightningColor += clamp(noise(uTime * 10.0), 0.0, 1.0);
 
     float noise5 = smoothstep(0.84, 0.89, fbm);
-    vec3 color6 = mix(color5, uColor6, noise5); 
+    vec3 color6 = mix(color5, lightningColor, noise5); 
 
     //Normals (looks pretty shit imo)
     vec3 pixel = vec3(0.5 / uResolution, 0.0);
