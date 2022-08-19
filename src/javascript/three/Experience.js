@@ -11,12 +11,14 @@ import { Lights } from "./Lights"
 import { Environment } from "./Environment"
 import { Bubble } from "./Bubbles"
 import { Background } from "./Background"
+import { Grain } from "./Grain"
 
 export function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
 export const pane = new Pane()
+pane.hidden = true
 
 export const bubbleFolder = pane.addFolder({
   title: "Bubble",
@@ -52,6 +54,8 @@ export const bubble = new Bubble()
 
 export const backgroud = new Background()
 
+export const grain = new Grain()
+
 export const camera = new Camera()
 
 export const renderer = new Renderer()
@@ -72,6 +76,8 @@ const tick = () => {
   // Update controls
   // camera.controls.update()
   camera.update()
+
+  grain.update(elapsedTime)
 
   // Render
   renderer.renderer.render(scene, camera.camera)
